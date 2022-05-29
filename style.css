@@ -10,7 +10,7 @@ body {
   width: 500px;
   margin: 0 auto;
   display: block;
-    text-align: right;
+  text-align: right;
 }
 
 .aaa img {
@@ -101,7 +101,7 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-    color: #333;
+  color: #333;
 }
 
 /* New Task */
@@ -127,7 +127,7 @@ li {
 }
 
 li > * {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 li > input[type="checkbox"] {
