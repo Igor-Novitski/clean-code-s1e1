@@ -13,18 +13,18 @@
   text-align: right;
 }
 
-.header-img {
+.header__img {
   width: 100%;
 }
 
-.header-link {
+.header__link {
   font-family: fantasy, cursive;
 }
 
 @media (max-width: 768px) {
 
   .header {
-      text-align: center;
+    text-align: center;
   }
 
 }
@@ -41,7 +41,7 @@
   flex-grow: 1;
 }
 
-.add-section-content {
+.add-section__content {
   display: flex;
 }
 
@@ -60,7 +60,7 @@ button{
   outline: none;
 }
 
-.button {
+.main-layout__button {
   background: none;
   border: 0px;
   color: #888;
@@ -70,7 +70,7 @@ button{
   cursor: pointer;
 }
 
-.button:hover {
+.main-layout__button:hover {
   color: #3a3a3a;
 }
 
@@ -86,7 +86,8 @@ button{
   text-transform: uppercase;
 }
 
-.text-area {
+.task-item__text-area,
+.add-section__text-area {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -99,13 +100,13 @@ button{
   color: #888;
 }
 
-.text-area:focus {
+.task-item__text-area:focus {
   color: #333;
 }
 
 /* New Task */
 
-.add-section-tittle {
+.add-section__tittle {
   display: block;
   margin: 0 0 20px;
 }
@@ -129,49 +130,49 @@ button{
   vertical-align: middle;
 }
 
-.task-item > .check-area {
+.task-item > .task-item__check-area {
   margin: 0 10px;
 }
 
-.task-item > .task-tittle {
+.task-item > .task-item__tittle {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.task-item > .text-area {
+.task-item > .task-item__text-area {
   width: 226px;
 }
 
-.button-img {
+.main-layout__button-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.button-img:hover {
+.main-layout__button-img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
 
-#completed-tasks .task-tittle {
+#completed-tasks .task-item__tittle {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 
-.task-item .text-area {
+.task-item .task-item__text-area {
   display: none;
 }
 
-.edit-mode .text-area {
+.edit-mode .task-item__text-area {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode .task-tittle {
+.edit-mode .task-item__tittle {
   display: none;
 }
